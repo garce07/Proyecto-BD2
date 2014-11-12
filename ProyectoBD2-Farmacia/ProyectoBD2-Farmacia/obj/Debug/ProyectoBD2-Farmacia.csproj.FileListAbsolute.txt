@@ -1,0 +1,9 @@
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\bin\Debug\ProyectoBD2-Farmacia.exe.config
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\bin\Debug\ProyectoBD2-Farmacia.exe
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\bin\Debug\ProyectoBD2-Farmacia.pdb
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\obj\Debug\ProyectoBD2-Farmacia.csprojResolveAssemblyReference.cache
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\obj\Debug\ProyectoBD2_Farmacia.Form1.resources
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\obj\Debug\ProyectoBD2_Farmacia.Properties.Resources.resources
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\obj\Debug\ProyectoBD2-Farmacia.csproj.GenerateResource.Cache
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\obj\Debug\ProyectoBD2-Farmacia.exe
+c:\users\guillermo\documents\visual studio 2012\Projects\ProyectoBD2-Farmacia\ProyectoBD2-Farmacia\obj\Debug\ProyectoBD2-Farmacia.pdb
