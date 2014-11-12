@@ -37,7 +37,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(306, 123);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Hola soy Goku y vine a terminar la progra XD";
+            this.button1.Text = "Hola soy Goku";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
