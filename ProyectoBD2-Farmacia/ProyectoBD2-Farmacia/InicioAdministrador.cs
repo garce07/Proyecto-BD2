@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoBD2_Farmacia
 {
-    public partial class Form1 : Form
+    public partial class InicioAdministrador : Form
     {
-        public Form1()
+        public InicioAdministrador()
         {
             InitializeComponent();
         }

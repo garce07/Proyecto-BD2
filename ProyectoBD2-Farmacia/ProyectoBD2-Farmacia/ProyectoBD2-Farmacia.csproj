@@ -59,16 +59,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Identificacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Identificacion.Designer.cs">
+      <DependentUpon>Identificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAdministrador.Designer.cs">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Identificacion.resx">
+      <DependentUpon>Identificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioAdministrador.resx">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
