@@ -97,6 +97,12 @@
     <Compile Include="IngresarCliente.Designer.cs">
       <DependentUpon>IngresarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarMedicamento.Designer.cs">
+      <DependentUpon>IngresarMedicamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="InicioAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IngresarCliente.resx">
       <DependentUpon>IngresarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarMedicamento.resx">
+      <DependentUpon>IngresarMedicamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioAdministrador.resx">
       <DependentUpon>InicioAdministrador.cs</DependentUpon>

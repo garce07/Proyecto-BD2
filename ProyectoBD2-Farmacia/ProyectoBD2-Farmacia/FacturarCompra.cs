@@ -58,5 +58,10 @@ namespace ProyectoBD2_Farmacia
             NuevoBuscar.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

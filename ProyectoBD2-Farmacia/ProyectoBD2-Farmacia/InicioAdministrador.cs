@@ -16,5 +16,19 @@ namespace ProyectoBD2_Farmacia
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Identificacion Nuevo = new Identificacion();
+            Nuevo.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IngresarMedicamento Nuevo = new IngresarMedicamento();
+            Nuevo.Show();
+            this.Hide();
+        }
     }
 }
