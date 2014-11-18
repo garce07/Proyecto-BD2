@@ -110,7 +110,7 @@ namespace ProyectoBD2_Farmacia
             {
                 SqlCommand Comando = new SqlCommand("SP_Consultar_Farmacias", Conn);
                 Comando.CommandType = CommandType.StoredProcedure;
-
+                
                 SqlDataAdapter da1 = new SqlDataAdapter(Comando);
                 da1.Fill(ds1, "dbo.Farmacia");
 
@@ -122,5 +122,57 @@ namespace ProyectoBD2_Farmacia
 
         }
 
+        public static DataSet Cargar_Medicamentos(int ID)
+        {
+            DataSet ds1 = new DataSet();
+            SqlConnection Conn = Conexion.ObtenerConexion();
+            if (Conn != null)
+            {
+                SqlCommand Comando = new SqlCommand("SP_Consultar_Inventario_X_Farmacia", Conn);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.AddWithValue("@ID", ID);
+
+                SqlDataAdapter da1 = new SqlDataAdapter(Comando);
+                da1.Fill(ds1, "dbo.InventarioXFarmacia");
+
+                Conn.Close();
+
+            }
+
+            return ds1;
+
+        }
+
+
+        public static int ObtenerPrecioMedicamento(String Nombre)
+        {
+            
+            int Precio = 0;
+
+            SqlConnection Conn = Conexion.ObtenerConexion();
+            if (Conn != null)
+            {
+                SqlCommand Comando = new SqlCommand("SP_Consultar_Medicamento", Conn);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.AddWithValue("@Nombre", Nombre);
+
+                SqlDataReader lector = Comando.ExecuteReader();
+                while (lector.Read())
+                {
+                    
+                    Precio = lector.GetSqlMoney(4).ToInt32();
+
+                    
+                }
+
+                Conn.Close();
+                return Precio;
+            }
+            else
+            {
+                Console.WriteLine("No se puede conectar a la base de datos");
+                return -1;
+            }
+        }
     }
 }

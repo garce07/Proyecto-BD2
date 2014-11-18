@@ -23,6 +23,7 @@ namespace ProyectoBD2_Farmacia
             comboBox1.DataSource = Data.Tables[0].DefaultView;
             comboBox1.ValueMember = "Nombre";
             
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

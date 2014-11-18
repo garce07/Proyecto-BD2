@@ -73,6 +73,12 @@
     <Compile Include="FacturarCompra.Designer.cs">
       <DependentUpon>FacturarCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="FarmaciaXMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmaciaXMedicamentos.Designer.cs">
+      <DependentUpon>FarmaciaXMedicamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Identificacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FacturarCompra.resx">
       <DependentUpon>FacturarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmaciaXMedicamentos.resx">
+      <DependentUpon>FarmaciaXMedicamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Identificacion.resx">
       <DependentUpon>Identificacion.cs</DependentUpon>
