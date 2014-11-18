@@ -67,6 +67,12 @@
     </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="ConexionMetodos.cs" />
+    <Compile Include="ConsultaFarmacias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaFarmacias.Designer.cs">
+      <DependentUpon>ConsultaFarmacias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FacturarCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BuscarCliente.resx">
       <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaFarmacias.resx">
+      <DependentUpon>ConsultaFarmacias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FacturarCompra.resx">
       <DependentUpon>FacturarCompra.cs</DependentUpon>

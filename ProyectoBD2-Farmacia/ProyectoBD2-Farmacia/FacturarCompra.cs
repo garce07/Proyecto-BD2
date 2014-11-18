@@ -18,7 +18,7 @@ namespace ProyectoBD2_Farmacia
             InitializeComponent();
             Lista = ListaTemp;
              
-            DataSet Data = ConexionMetodos.Cargar_Medicamentos(IDFarmacia);
+            DataSet Data = ConexionMetodos.Cargar_Inventario(IDFarmacia);
             comboBox1.DataSource = Data.Tables[0].DefaultView;
             comboBox1.ValueMember = "Nombre";
             
@@ -40,11 +40,11 @@ namespace ProyectoBD2_Farmacia
 
                 int Monto = Cantidad * Precio;
 
-                int Monto_actual = Convert.ToInt32(textBox3.Text);
+                int Monto_actual = Convert.ToInt32(label6.Text);
 
                 int Monto_Final = Monto + Monto_actual;
 
-                textBox3.Text = Monto_Final.ToString();
+                label6.Text = Monto_Final.ToString();
 
 
 

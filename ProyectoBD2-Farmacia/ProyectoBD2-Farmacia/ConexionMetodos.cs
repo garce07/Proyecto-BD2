@@ -20,7 +20,7 @@ namespace ProyectoBD2_Farmacia
             SqlConnection Conn = Conexion.ObtenerConexion();
             if (Conn != null)
             {
-                SqlCommand Comando = new SqlCommand("autentificacion", Conn);
+                SqlCommand Comando = new SqlCommand("dbo.SP_Autentificacion", Conn);
                 Comando.CommandType = CommandType.StoredProcedure;
                 Comando.Parameters.AddWithValue("@usuario", pUsuario);
                 Comando.Parameters.AddWithValue("@contraseña", pContraseña);
@@ -122,7 +122,7 @@ namespace ProyectoBD2_Farmacia
 
         }
 
-        public static DataSet Cargar_Medicamentos(int ID)
+        public static DataSet Cargar_Inventario(int ID)
         {
             DataSet ds1 = new DataSet();
             SqlConnection Conn = Conexion.ObtenerConexion();
@@ -143,6 +143,68 @@ namespace ProyectoBD2_Farmacia
 
         }
 
+        public static DataSet Cargar_Medicamentos()
+        {
+            DataSet ds1 = new DataSet();
+            SqlConnection Conn = Conexion.ObtenerConexion();
+            if (Conn != null)
+            {
+                SqlCommand Comando = new SqlCommand("SP_Consultar_Medicamento", Conn);
+                Comando.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter da1 = new SqlDataAdapter(Comando);
+                da1.Fill(ds1, "dbo.Medicamento");
+
+                Conn.Close();
+
+            }
+
+            return ds1;
+
+        }
+
+        public static DataSet Cargar_Farmacias_X_Medicamento(String Medicamento)
+        {
+            DataSet ds1 = new DataSet();
+            SqlConnection Conn = Conexion.ObtenerConexion();
+            if (Conn != null)
+            {
+                SqlCommand Comando = new SqlCommand("dbo.SP_Obtener_Farmacias_X_Medicamento", Conn);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.AddWithValue("@Nombre_Medicamento", Medicamento);
+
+                SqlDataAdapter da1 = new SqlDataAdapter(Comando);
+                da1.Fill(ds1, "dbo.Farmacia");
+
+                Conn.Close();
+
+            }
+
+            return ds1;
+
+        }
+
+
+        public static DataSet Cargar_Empleados(int IDFarmacia)
+        {
+            DataSet ds1 = new DataSet();
+            SqlConnection Conn = Conexion.ObtenerConexion();
+            if (Conn != null)
+            {
+                SqlCommand Comando = new SqlCommand("dbo.SP_Consultar_Empleado", Conn);
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.AddWithValue("@ID_Farmacia", IDFarmacia);
+
+                SqlDataAdapter da1 = new SqlDataAdapter(Comando);
+                da1.Fill(ds1, "dbo.Empleado");
+
+                Conn.Close();
+
+            }
+
+            return ds1;
+
+        }
 
         public static int ObtenerPrecioMedicamento(String Nombre)
         {
